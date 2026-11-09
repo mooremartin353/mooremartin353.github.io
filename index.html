@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#04100f">
+<title>易欧交易所 - 专业数字资产交易平台</title>
+<meta name="keywords" content="易欧交易所,ok平台注册,ok交易所,ok下载,ok官网">
+<meta name="description" content="易欧交易所是全球领先的数字货币交易平台，提供安全、高效的币币交易、合约交易及资产存储服务。下载易欧App，享受极速交易体验与24小时客服支持。">
+<meta property="og:title" content="易欧交易所 - 专业数字资产交易平台">
+<meta property="og:description" content="易欧交易所提供安全、高效的币币交易、合约交易及资产存储服务。下载易欧App，享受极速交易体验与24小时客服支持。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<style>
+  :root{
+    --bg-0:#030b0b;
+    --bg-1:#05100f;
+    --bg-2:#0a1a19;
+    --bg-3:#0f2523;
+    --ink:#eefaf7;
+    --ink-2:#b3cfca;
+    --muted:#7d9c98;
+    --coral:#ff5f7e;
+    --coral-2:#ff8ba1;
+    --coral-soft:#ffc2ce;
+    --amber:#ffb547;
+    --amber-soft:#ffd79a;
+    --teal:#2fe0c4;
+    --line:rgba(255,95,126,.24);
+    --line-amber:rgba(255,181,71,.26);
+    --line-teal:rgba(47,224,196,.20);
+    --card:rgba(10,26,25,.86);
+    --r:18px;
+    --maxw:1180px;
+    --shadow:0 26px 56px -32px rgba(0,0,0,.98);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg-0);color:var(--ink);font-size:16px;line-height:1.78;
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;
+    background:
+      radial-gradient(880px 560px at 90% -10%,rgba(255,95,126,.28),transparent 62%),
+      radial-gradient(760px 520px at -6% 10%,rgba(47,224,196,.20),transparent 60%),
+      radial-gradient(800px 620px at 48% 106%,rgba(255,181,71,.13),transparent 66%),
+      linear-gradient(166deg,#030b0b 0%,#05100f 34%,#0c201e 72%,#030b0b 100%);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(rgba(47,224,196,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,95,126,.06) 1px,transparent 1px);
+    background-size:52px 52px;
+    -webkit-mask-image:radial-gradient(circle at 58% 2%,#000 0%,transparent 72%);
+    mask-image:radial-gradient(circle at 58% 2%,#000 0%,transparent 72%);
+  }
+  a{color:inherit;text-decoration:none}
+  svg{display:block;max-width:100%}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  .site-header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(3,11,11,.88);
+    border-bottom:1px solid var(--line-teal);
+    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;height:64px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:750;font-size:16.8px;letter-spacing:.4px}
+  .logo{
+    width:37px;height:37px;border-radius:11px;flex:none;display:grid;place-items:center;
+    background:linear-gradient(140deg,#ffc2ce,#ff5f7e 46%,#ffb547);
+    box-shadow:0 12px 26px -12px rgba(255,95,126,1);
+  }
+  .logo svg{width:19px;height:19px}
+  .brand small{display:block;font-size:10px;font-weight:500;letter-spacing:2px;color:var(--muted)}
+  .nav-links{display:none;gap:18px;font-size:13.9px;color:var(--ink-2)}
+  .nav-links a{position:relative;padding:4px 0;transition:color .2s}
+  .nav-links a:hover,.nav-links a:focus-visible{color:var(--coral-soft)}
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;border-radius:2px;
+    background:linear-gradient(90deg,var(--coral),var(--amber));transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:11px;
+    font-size:13.7px;font-weight:750;color:#180410;white-space:nowrap;
+    background:linear-gradient(135deg,#ff8ba1,#ff5f7e 62%,#ffb547);
+    box-shadow:0 13px 28px -14px rgba(255,95,126,1);
+    transition:transform .18s ease;
+  }
+  .nav-cta:hover{transform:translateY(-2px)}
+  .nav-cta svg{width:15px;height:15px}
+  @media(min-width:1000px){
+    .nav-links{display:flex}
+    .nav{height:70px}
+  }
+
+  .hero{padding:44px 0 40px}
+  .hero-grid{display:grid;gap:30px}
+  @media(min-width:1000px){
+    .hero-grid{grid-template-columns:1.06fr .94fr;gap:36px;align-items:center}
+    .hero{padding:60px 0 50px}
+  }
+  .pill{
+    display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border-radius:999px;
+    font-size:12px;letter-spacing:.7px;color:var(--coral-soft);
+    background:rgba(255,95,126,.11);border:1px solid var(--line);
+  }
+  .pill i{width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px var(--teal);animation:pulse 2.7s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.28}}
+  h1{margin:19px 0 0;font-size:clamp(27px,6.2vw,52px);line-height:1.21;font-weight:850;letter-spacing:-1.1px}
+  h1 em{
+    font-style:normal;
+    background:linear-gradient(100deg,#ffffff 0%,#ffc2ce 30%,#ff5f7e 60%,#ffb547 92%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  h1 span.dim{color:var(--ink);opacity:.94}
+  .lead{margin:17px 0 0;max-width:600px;color:var(--ink-2);font-size:15px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:14px 23px;border-radius:13px;font-size:14.9px;font-weight:700;
+    transition:transform .18s ease,box-shadow .18s ease,background .2s,border-color .2s;
+  }
+  .btn svg{width:19px;height:19px;flex:none}
+  .btn-primary{
+    background:linear-gradient(135deg,#ff8ba1,#ff5f7e 58%,#e94a68);
+    color:#1a0410;box-shadow:0 18px 38px -18px rgba(255,95,126,1);
+  }
+  .btn-primary:hover,.btn-primary:focus-visible{transform:translateY(-2px)}
+  .btn-ghost{
+    background:rgba(255,255,255,.04);border:1px solid var(--line-amber);color:var(--ink);
+  }
+  .btn-ghost:hover,.btn-ghost:focus-visible{transform:translateY(-2px);background:rgba(255,181,71,.12);border-color:rgba(255,181,71,.5)}
+  .hero-notes{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:21px;font-size:12.4px;color:var(--muted)}
+  .hero-notes span{display:inline-flex;align-items:center;gap:7px}
+  .hero-notes span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--amber);opacity:.9}
+
+  .panel{
+    position:relative;border-radius:22px;padding:20px;
+    background:linear-gradient(158deg,rgba(14,36,34,.72),rgba(3,10,10,.82));
+    border:1px solid var(--line);
+    box-shadow:0 32px 62px -32px rgba(0,0,0,.98),inset 0 1px 0 rgba(255,255,255,.07);
+    -webkit-backdrop-filter:blur(18px) saturate(1.24);
+    backdrop-filter:blur(18px) saturate(1.24);
+    overflow:hidden;
+  }
+  @supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){
+    .panel{background:linear-gradient(158deg,rgba(10,28,26,.97),rgba(3,9,9,.98))}
+  }
+  .panel::before{
+    content:"";position:absolute;right:-70px;top:-82px;width:208px;height:208px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,95,126,.28),transparent 66%);pointer-events:none;
+  }
+  .panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;position:relative}
+  .panel-head strong{font-size:15px;font-weight:750;color:#fff;letter-spacing:.3px}
+  .badge-demo{
+    font-size:11px;letter-spacing:.6px;padding:4px 9px;border-radius:7px;white-space:nowrap;
+    color:#fff0d2;background:rgba(255,181,71,.14);border:1px solid var(--line-amber);
+  }
+  .panel-caption{margin-top:6px;font-size:11.4px;color:var(--muted);position:relative}
+
+  .kline{
+    margin-top:15px;position:relative;height:132px;border-radius:12px;overflow:hidden;
+    background:linear-gradient(180deg,rgba(47,224,196,.07),rgba(3,10,10,.34));
+    border:1px solid rgba(255,95,126,.18);
+    display:flex;align-items:flex-end;justify-content:space-between;gap:5px;padding:12px 12px 10px;
+  }
+  .candle{position:relative;flex:1 1 0;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+  .candle i{display:block;width:2px;margin:0 auto;background:rgba(255,255,255,.20)}
+  .candle b{display:block;width:100%;border-radius:3px}
+  .candle.up b{background:linear-gradient(180deg,#2fe0c4,#12a892)}
+  .candle.down b{background:linear-gradient(180deg,#ff8ba1,#e94a68)}
+  .kline-grid{
+    position:absolute;inset:12px;pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px);
+    background-size:100% 33.33%;
+  }
+  .kline-tag{
+    position:absolute;right:14px;top:10px;font-size:10.6px;letter-spacing:.5px;
+    color:var(--muted);
+  }
+
+  .book{margin-top:14px}
+  .book-title{display:flex;align-items:center;justify-content:space-between;font-size:11.6px;color:var(--muted);margin-bottom:7px}
+  .book-title b{color:var(--ink-2);font-weight:650;font-size:11.8px;letter-spacing:.4px}
+  .book-row{position:relative;display:flex;align-items:center;justify-content:space-between;height:21px;font-size:11.4px;padding:0 6px;border-radius:5px}
+  .book-row .bgv{position:absolute;right:0;top:3px;bottom:3px;border-radius:4px;opacity:.28}
+  .book-row.ask .bgv{background:var(--coral)}
+  .book-row.bid .bgv{background:var(--teal)}
+  .book-row span{position:relative;z-index:1;color:var(--ink-2)}
+  .book-row.ask span:first-child{color:var(--coral-soft)}
+  .book-row.bid span:first-child{color:#9dfff0}
+  .book-mid{
+    margin:8px 0;padding:7px 10px;border-radius:9px;display:flex;align-items:center;justify-content:space-between;
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  }
+  .book-mid b{font-size:13.6px;color:#fff;font-weight:750;letter-spacing:.3px}
+  .book-mid em{font-style:normal;font-size:10.6px;color:var(--muted)}
+  .panel-foot{
+    margin-top:15px;padding-top:13px;border-top:1px solid rgba(255,95,126,.18);
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;position:relative;
+  }
+  .panel-foot div{text-align:center}
+  .panel-foot b{display:block;font-size:12.2px;font-weight:700;color:var(--coral-soft)}
+  .panel-foot em{display:block;font-style:normal;font-size:10.5px;color:var(--muted);margin-top:1px}
+
+  section{padding:46px 0}
+  .sec-head{max-width:830px;margin:0 auto 30px;text-align:center}
+  .tag{
+    display:inline-block;font-size:11.4px;font-weight:800;letter-spacing:2.4px;
+    text-transform:uppercase;color:var(--amber);margin-bottom:11px;
+  }
+  h2{font-size:clamp(20px,4.2vw,29px);line-height:1.34;font-weight:800;letter-spacing:-.2px}
+  .sec-head p{margin-top:12px;color:var(--ink-2);font-size:14.8px}
+  h3{font-size:17px;font-weight:700;line-height:1.5}
+
+  .grid{display:grid;gap:16px}
+  @media(min-width:720px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(min-width:960px){.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  .card{
+    background:linear-gradient(158deg,rgba(12,30,28,.92),rgba(3,9,9,.93));
+    border:1px solid var(--line-teal);border-radius:var(--r);
+    box-shadow:var(--shadow);padding:24px;
+  }
+  .ic{
+    width:45px;height:45px;border-radius:13px;display:grid;place-items:center;margin-bottom:14px;
+    background:linear-gradient(145deg,rgba(255,95,126,.22),rgba(47,224,196,.20));
+    border:1px solid var(--line);color:var(--coral-soft);
+  }
+  .ic svg{width:22px;height:22px}
+  .card h3{color:#fff}
+  .card p{margin-top:8px;color:var(--ink-2);font-size:14.1px}
+
+  .motto{
+    margin-top:18px;padding:24px 26px;border-radius:var(--r);
+    border:1px solid var(--line-amber);background:linear-gradient(140deg,rgba(255,181,71,.10),rgba(3,9,9,.86));
+  }
+  .motto strong{
+    display:block;font-size:clamp(15.4px,3.2vw,20px);line-height:1.5;font-weight:800;
+    background:linear-gradient(100deg,#ffd79a,#ffb547 46%,#ff5f7e);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .motto p{margin-top:9px;color:var(--ink-2);font-size:13.9px}
+
+  .dl-grid{display:grid;gap:16px}
+  @media(min-width:760px){.dl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .dl-card{
+    position:relative;overflow:hidden;padding:26px;border-radius:20px;
+    background:linear-gradient(155deg,rgba(14,36,34,.95),rgba(3,8,8,.96));
+    border:1px solid var(--line-teal);box-shadow:var(--shadow);
+  }
+  .dl-card::after{
+    content:"";position:absolute;right:-70px;top:-78px;width:186px;height:186px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,95,126,.26),transparent 66%);pointer-events:none;
+  }
+  .dl-top{display:flex;align-items:center;gap:13px}
+  .dl-logo{
+    width:48px;height:48px;border-radius:14px;flex:none;display:grid;place-items:center;
+    background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--coral-soft);
+  }
+  .dl-logo svg{width:24px;height:24px}
+  .dl-sub{color:var(--muted);font-size:12.5px;margin-top:2px}
+  .dl-card ul{list-style:none;margin:16px 0 20px;display:grid;gap:10px}
+  .dl-card li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-2);font-size:13.8px}
+  .dl-card li svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--amber)}
+  .dl-btn{
+    display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+    padding:14px;border-radius:13px;font-weight:700;font-size:14.9px;
+    background:linear-gradient(135deg,rgba(255,95,126,.20),rgba(255,181,71,.22));
+    border:1px solid var(--line);color:#fff6f8;
+    transition:transform .18s,border-color .2s,background .2s;
+  }
+  .dl-btn:hover,.dl-btn:focus-visible{transform:translateY(-2px);border-color:rgba(255,95,126,.7);background:linear-gradient(135deg,rgba(255,95,126,.34),rgba(255,181,71,.32))}
+  .dl-btn svg{width:18px;height:18px;color:var(--coral-soft)}
+
+  .table-wrap{
+    border:1px solid var(--line-teal);border-radius:var(--r);overflow:hidden;
+    background:rgba(10,26,25,.82);box-shadow:var(--shadow);
+  }
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;min-width:680px;font-size:14px}
+  caption{caption-side:top;text-align:left;padding:16px 18px 4px;color:var(--muted);font-size:12.1px}
+  th,td{padding:13px 18px;text-align:left;border-bottom:1px solid rgba(47,224,196,.14);white-space:nowrap}
+  thead th{
+    font-size:11.9px;letter-spacing:.6px;color:var(--coral-soft);font-weight:700;
+    background:rgba(255,95,126,.10);text-transform:uppercase;
+  }
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:rgba(255,95,126,.07)}
+  .pair{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:#fff}
+  .dot-p{width:8px;height:8px;border-radius:50%;flex:none}
+  .p-c{background:var(--coral);box-shadow:0 0 9px var(--coral)}
+  .p-a{background:var(--amber);box-shadow:0 0 9px var(--amber)}
+
+  .steps{display:grid;gap:14px}
+  @media(min-width:900px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  .step{
+    position:relative;overflow:hidden;padding:22px 20px;border-radius:16px;
+    background:rgba(10,26,25,.80);border:1px solid var(--line-teal);
+  }
+  .step::before{
+    content:"";position:absolute;left:0;top:0;height:100%;width:3px;
+    background:linear-gradient(180deg,var(--coral),var(--amber));opacity:.9;
+  }
+  .step .num{
+    display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+    border-radius:8px;margin-bottom:11px;font-size:12.2px;font-weight:800;color:#1a0410;
+    background:linear-gradient(135deg,#ff8ba1,#ffb547);
+  }
+  .step h3{font-size:15.2px}
+  .step p{margin-top:6px;color:var(--ink-2);font-size:13.5px}
+
+  .valid-grid{display:grid;gap:12px}
+  @media(min-width:700px){.valid-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .valid{
+    display:flex;gap:12px;align-items:flex-start;padding:17px;border-radius:14px;
+    background:rgba(10,26,25,.72);border:1px solid var(--line-teal);
+  }
+  .valid .ico{
+    width:33px;height:33px;border-radius:10px;flex:none;display:grid;place-items:center;
+    background:rgba(255,181,71,.13);border:1px solid var(--line-amber);color:var(--amber-soft);
+  }
+  .valid .ico svg{width:16px;height:16px}
+  .valid h3{font-size:14.4px}
+  .valid p{color:var(--muted);font-size:13.2px;margin-top:3px}
+
+  .faq{max-width:880px;margin:0 auto;display:grid;gap:12px}
+  details{
+    background:rgba(10,26,25,.84);border:1px solid var(--line-teal);
+    border-radius:15px;padding:0 20px;transition:border-color .2s,background .2s;
+  }
+  details[open]{border-color:var(--line);background:rgba(14,36,34,.92)}
+  summary{
+    list-style:none;cursor:pointer;padding:18px 32px 18px 0;position:relative;
+    font-weight:650;font-size:15px;line-height:1.6;color:#fff;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{
+    content:"";position:absolute;right:3px;top:50%;width:9px;height:9px;
+    border-right:2px solid var(--coral-soft);border-bottom:2px solid var(--coral-soft);
+    transform:translateY(-70%) rotate(45deg);transition:transform .25s;
+  }
+  details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+  details p{padding:0 0 18px;color:var(--ink-2);font-size:14px}
+
+  .support{
+    padding:26px;border-radius:var(--r);
+    border:1px solid var(--line);background:linear-gradient(150deg,rgba(255,95,126,.09),rgba(10,26,25,.88));
+  }
+  .support h2{display:flex;align-items:center;gap:11px;font-size:19px}
+  .support h2 svg{width:22px;height:22px;color:var(--coral-soft);flex:none}
+  .support ol{margin:16px 0 0 0;padding-left:0;list-style:none;display:grid;gap:11px;counter-reset:sp}
+  .support li{counter-increment:sp;display:flex;gap:11px;font-size:13.9px;color:#dff2ef}
+  .support li::before{
+    content:counter(sp);flex:none;width:21px;height:21px;border-radius:6px;margin-top:3px;
+    display:grid;place-items:center;font-size:11.4px;font-weight:800;color:#1a0410;
+    background:linear-gradient(135deg,#ffc2ce,#ffb547);
+  }
+
+  .risk-block{
+    padding:26px;border-radius:var(--r);
+    border:1px solid var(--line-amber);
+    background:linear-gradient(150deg,rgba(255,181,71,.08),rgba(10,26,25,.88));
+  }
+  .risk-block h2{display:flex;align-items:center;gap:11px;font-size:19px}
+  .risk-block h2 svg{width:22px;height:22px;color:var(--amber);flex:none}
+  .risk-block ul{list-style:none;margin-top:16px;display:grid;gap:11px}
+  .risk-block li{display:flex;gap:10px;font-size:13.9px;color:#dff2ef}
+  .risk-block li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--amber);flex:none;margin-top:9px}
+
+  footer{
+    margin-top:42px;padding:38px 0 28px;
+    border-top:1px solid var(--line-teal);
+    background:linear-gradient(180deg,rgba(3,11,11,0),rgba(1,5,5,.95));
+  }
+  .foot-grid{display:grid;gap:26px}
+  @media(min-width:840px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr}}
+  .foot-brand p{margin-top:12px;color:var(--muted);font-size:13.1px;max-width:400px}
+  .foot-col h4{font-size:14px;font-weight:700;margin-bottom:11px;letter-spacing:.4px;color:#fff}
+  .foot-col a{display:block;color:var(--muted);font-size:13.3px;padding:5px 0;transition:color .2s}
+  .foot-col a:hover{color:var(--coral-soft)}
+  .foot-risk{
+    margin-top:28px;padding:18px 20px;border-radius:14px;font-size:12.7px;color:#dff2ef;
+    border:1px solid var(--line-amber);background:rgba(255,181,71,.06);
+  }
+  .foot-risk strong{color:var(--amber-soft)}
+  .copyright{
+    margin-top:22px;padding-top:18px;border-top:1px solid rgba(47,224,196,.14);
+    display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;
+    color:var(--muted);font-size:12.1px;
+  }
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.22,.8,.3,1),transform .7s cubic-bezier(.22,.8,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .pill i{animation:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:7px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https:\/\/schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "易欧交易所 - 专业数字资产交易平台",
+      "alternateName": "易欧交易所",
+      "description": "易欧交易所提供安全、高效的币币交易、合约交易及资产存储服务，下载易欧App可享受极速交易体验与24小时客服支持。",
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "zh-CN",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "易欧交易所是什么类型的平台？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "易欧交易所是面向数字资产交易用户的服务平台，提供币币交易、合约交易与资产存储等基础功能，并在官方页面公示费率、保证金与风控相关规则，便于用户在下单前核对。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "易欧App 应该从哪里下载才是正版？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "请从易欧交易所官方页面公布的下载入口获取安卓与 iOS 客户端，安装前核对应用名称、开发者标识与版本说明是否与官方展示一致。不要使用来源不明的第三方下载站、群文件转发包或所谓内部版本。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "搜索 ok下载、ok官网 时如何确认访问的站点是否与易欧交易所相关？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ok平台注册、ok交易所、ok下载、ok官网 等表述指向的是另一品牌主体的产品，与易欧交易所并非同一运营主体，两者不存在隶属或官方合作关系。若您需要易欧交易所，请以本站及官方公告公示的入口为准，不要凭相似名称判断归属。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "合约交易中的保证金、杠杆与强制平仓如何理解？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "开仓需按仓位规模与杠杆比例缴纳保证金，杠杆越高占用保证金越少，但价格反向波动对权益的侵蚀也越快。当账户权益低于维持保证金要求时，系统按规则触发强制平仓以控制风险敞口，该过程可能实现亏损且不可撤销。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "资金费率是按什么周期结算的？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "资金费率按平台公布的结算周期在多空双方之间划转，用于使合约价格与标的参考价格保持贴近。费率数值随市场情况变化，持仓期间会按期结算，长期持仓将累积相应成本或收入。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "页面中的 K 线与订单簿是实时行情吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。首屏面板中的 K 线柱、订单簿档位与中间价为界面排版演示用途的示意内容，不代表任何时点的真实行情、价格或成交量，也不构成收益预期，不可作为交易依据。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "资产存储方面有哪些安全机制？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "平台采用冷热钱包分离，大部分资产存放于离线环境，线上仅保留日常流转额度；关键操作需多重签名授权；提现环节设有地址校验与风险拦截，账户侧支持两步验证与设备锁。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "遇到问题如何获得 24 小时客服支持？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可通过官方客户端内的在线客服入口或官方页面公示的受理渠道提交问题，并附上必要的订单号与时间信息。客服不会索要助记词、私钥、登录密码或验证码，凡提出此类要求的均为诈骗。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef5d49767aaef55c81e65830f189af18";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="https://static.staticsave.com/kaiko/kaikotz.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回页面顶部">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1a0410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 6l4.2 12L12 9.6 14.8 18 19 6"/>
+          </svg>
+        </span>
+        <span>易欧交易所<small>YIOU EXCHANGE</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">平台概览</a>
+        <a href="#download">易欧App</a>
+        <a href="#spot">币币交易</a>
+        <a href="#contract">合约机制</a>
+        <a href="#safety">资产安全</a>
+        <a href="#support">客服支持</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <a class="nav-cta" href="#download">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v11"/><path d="M7.5 10L12 14.5 16.5 10"/><path d="M4 20h16"/>
+        </svg>
+        下载 App
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-grid">
+        <div>
+          <span class="pill"><i aria-hidden="true"></i>币币交易 · 合约机制 · 24 小时客服</span>
+          <h1 id="page-title"><em>易欧交易所</em><br><span class="dim">专业数字资产交易平台</span></h1>
+          <p class="lead">
+            易欧交易所提供安全、高效的币币交易、合约交易及资产存储服务。
+            下载易欧App，享受极速交易体验与24小时客服支持。
+            平台以规则公示、成交可查为基本前提，不承诺任何交易结果。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download" rel="nofollow noopener" aria-label="前往安卓正版 App 下载区块">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M11 18.6h2"/>
+              </svg>
+              安卓版下载
+            </a>
+            <a class="btn btn-ghost" href="#download" rel="nofollow noopener" aria-label="前往 iOS 正版 App 下载区块">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15.6 4.6c-1.9.6-3.3 2.4-3.3 4.5 0 2.1 1.4 3.9 3.3 4.5 1.9-.6 3.3-2.4 3.3-4.5 0-2.1-1.4-3.9-3.3-4.5z"/>
+                <path d="M11.2 6.8c.9 3.2 1.6 5.4 2.9 8.1"/>
+              </svg>
+              iOS 版下载
+            </a>
+          </div>
+          <div class="hero-notes">
+            <span>安卓 / iOS 双端正版</span>
+            <span>冷热钱包隔离</span>
+            <span>7×24 客服受理</span>
+          </div>
+        </div>
+
+        <aside class="panel reveal" aria-label="交易界面示意面板">
+          <div class="panel-head">
+            <strong>交易界面示意</strong>
+            <span class="badge-demo">示意数据</span>
+          </div>
+          <p class="panel-caption">以下 K 线柱、订单簿档位与中间价均为排版演示用途，非实时行情，不构成收益预期。</p>
+
+          <div class="kline" aria-hidden="true">
+            <div class="kline-grid"></div>
+            <span class="kline-tag">K 线示意</span>
+            <div class="candle up"><b style="height:34%"></b><i style="height:12%"></i></div>
+            <div class="candle down"><b style="height:22%"></b><i style="height:9%"></i></div>
+            <div class="candle up"><b style="height:46%"></b><i style="height:14%"></i></div>
+            <div class="candle up"><b style="height:28%"></b><i style="height:10%"></i></div>
+            <div class="candle down"><b style="height:38%"></b><i style="height:12%"></i></div>
+            <div class="candle up"><b style="height:56%"></b><i style="height:16%"></i></div>
+            <div class="candle down"><b style="height:30%"></b><i style="height:11%"></i></div>
+            <div class="candle up"><b style="height:44%"></b><i style="height:13%"></i></div>
+            <div class="candle down"><b style="height:26%"></b><i style="height:9%"></i></div>
+            <div class="candle up"><b style="height:62%"></b><i style="height:15%"></i></div>
+            <div class="candle up"><b style="height:36%"></b><i style="height:10%"></i></div>
+            <div class="candle down"><b style="height:20%"></b><i style="height:8%"></i></div>
+          </div>
+
+          <div class="book" aria-hidden="true">
+            <div class="book-title"><b>订单簿示意</b><span>价格 / 数量</span></div>
+            <div class="book-row ask"><span>卖五</span><span>0.00</span><span>---</span><i class="bgv" style="width:28%"></i></div>
+            <div class="book-row ask"><span>卖四</span><span>0.00</span><span>---</span><i class="bgv" style="width:36%"></i></div>
+            <div class="book-row ask"><span>卖三</span><span>0.00</span><span>---</span><i class="bgv" style="width:44%"></i></div>
+            <div class="book-mid"><b>中间价示意</b><em>非实时报价</em></div>
+            <div class="book-row bid"><span>买一</span><span>0.00</span><span>---</span><i class="bgv" style="width:46%"></i></div>
+            <div class="book-row bid"><span>买二</span><span>0.00</span><span>---</span><i class="bgv" style="width:34%"></i></div>
+            <div class="book-row bid"><span>买三</span><span>0.00</span><span>---</span><i class="bgv" style="width:24%"></i></div>
+          </div>
+
+          <div class="panel-foot">
+            <div><b>保证金</b><em>开仓占用</em></div>
+            <div><b>资金费率</b><em>周期结算</em></div>
+            <div><b>强平</b><em>阈值触发</em></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="overview" aria-labelledby="overview-title">
+      <div class="sec-head reveal">
+        <span class="tag">Overview</span>
+        <h2 id="overview-title">易欧交易所平台概览</h2>
+        <p>围绕币币交易、合约交易与资产存储三类基础服务构建，强调规则公开、成交可查与信息可比。</p>
+      </div>
+      <div class="grid g3">
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 17l5-6 3.5 3.5L17 8l3 3"/><path d="M4 20h16"/>
+            </svg>
+          </span>
+          <h3>三类核心服务</h3>
+          <p>币币交易、合约交易与资产存储并行，覆盖行情查看、委托下单、仓位管理与流水查询。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M8 17h3"/>
+            </svg>
+          </span>
+          <h3>规则公示</h3>
+          <p>费率标准、保证金要求与风控规则在官方页面同步公示，便于下单前先行核对。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="M9.2 12.2l2 2 3.6-3.8"/>
+            </svg>
+          </span>
+          <h3>安全优先</h3>
+          <p>冷热钱包分离、多重签名与提现风控共同构成资产流转环节的防护结构。</p>
+        </article>
+      </div>
+
+      <div class="motto reveal">
+        <strong>官方渠道识别：不同平台名称并不等同</strong>
+        <p>网络上常见 ok平台注册、ok交易所、ok下载、ok官网 等表述，指向的是另一品牌主体的产品，与易欧交易所并非同一运营主体，两者不存在隶属或合作关系。请以本页与官方公告公示的入口为准，不要仅凭名称相似判断归属，也不要在非官方页面填写账号信息。</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="download" aria-labelledby="download-title">
+      <div class="sec-head reveal">
+        <span class="tag">Download</span>
+        <h2 id="download-title">易欧App 下载</h2>
+        <p>官方页面公布的下载入口是获取易欧App 正版客户端的唯一依据。以下两区块分别说明安卓端与 iOS 端的核验要点。</p>
+      </div>
+
+      <div class="dl-grid">
+        <article class="dl-card reveal">
+          <div class="dl-top">
+            <span class="dl-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 10.5a7 7 0 0 1 14 0v4a2 2 0 0 1-2 2h-1v-6"/>
+                <path d="M5 10.5v4a2 2 0 0 0 2 2h1v-6"/>
+                <path d="M4.7 8.4l1.6.7M19.3 8.4l-1.6.7"/>
+              </svg>
+            </span>
+            <div>
+              <h3>安卓正版客户端</h3>
+              <p class="dl-sub">适用于 Android 8.0 及以上系统</p>
+            </div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>仅从易欧交易所官方页面公布的入口获取安装包</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>核对应用名称、图标与版本号是否与官方展示一致</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>拒绝来源不明的转发包与所谓内部版、修改版安装文件</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>安装完成后先完成两步验证与设备锁设置，再操作资产</li>
+          </ul>
+          <a class="dl-btn" href="#" rel="nofollow noopener" aria-label="安卓正版客户端下载占位入口">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 20h14"/>
+            </svg>
+            安卓正版下载通道
+          </a>
+        </article>
+
+        <article class="dl-card reveal">
+          <div class="dl-top">
+            <span class="dl-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15.6 4.6c-1.9.6-3.3 2.4-3.3 4.5 0 2.1 1.4 3.9 3.3 4.5 1.9-.6 3.3-2.4 3.3-4.5 0-2.1-1.4-3.9-3.3-4.5z"/>
+                <path d="M11.2 6.8c.9 3.2 1.6 5.4 2.9 8.1"/>
+                <path d="M8.4 21c1.9-1.2 3.9-1.2 5.8 0"/>
+              </svg>
+            </span>
+            <div>
+              <h3>iOS 正版客户端</h3>
+              <p class="dl-sub">适用于 iOS 13 及以上系统</p>
+            </div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>按官方页面指引获取安装路径，确认开发者信息</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>若采用描述文件方式安装，需在系统设置中手动确认并核对来源</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>启用面容或触控 ID 解锁，避免他人直接打开应用</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>登录后核对账号与安全项，确认无误再进入交易页面</li>
+          </ul>
+          <a class="dl-btn" href="#" rel="nofollow noopener" aria-label="iOS 正版客户端下载占位入口">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 20h14"/>
+            </svg>
+            iOS 正版下载通道
+          </a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="spot" aria-labelledby="spot-title">
+      <div class="sec-head reveal">
+        <span class="tag">Spot</span>
+        <h2 id="spot-title">币币交易</h2>
+        <p>币币交易以持有资产本身为核心，是理解数字资产交易的基础环节。以下仅描述功能与流程。</p>
+      </div>
+      <div class="grid g3">
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.2h5"/><path d="M9.6 12.6h5"/><path d="M12 9.2v8"/>
+            </svg>
+          </span>
+          <h3>多交易对支持</h3>
+          <p>提供多种数字资产之间的交易对，行情与盘口在同一页面呈现，便于下单前查看深度与价格区间。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16"/><path d="M4 12h9"/><path d="M4 18h13"/>
+            </svg>
+          </span>
+          <h3>委托与撮合</h3>
+          <p>支持市价与限价委托，撮合按价格优先、时间优先原则配对，可按需设置止盈止损条件。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h4l2-4 3 8 2-4h3"/>
+            </svg>
+          </span>
+          <h3>成交可回溯</h3>
+          <p>每笔成交生成可查询记录，成交价、数量与手续费明细均可核对，便于事后对账与复盘。</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="contract" aria-labelledby="contract-title">
+      <div class="sec-head reveal">
+        <span class="tag">Contract</span>
+        <h2 id="contract-title">合约交易机制</h2>
+        <p>本节只描述保证金、杠杆、资金费率与强制平仓的机制层面内容，不含任何收益预期或业绩描述。</p>
+      </div>
+
+      <div class="table-wrap reveal">
+        <div class="table-scroll">
+          <table>
+            <caption>下表为机制说明性对照，不含任何收益率、牌价或成交数据；具体参数以官方客户端内公示规则为准。</caption>
+            <thead>
+              <tr>
+                <th scope="col">机制维度</th>
+                <th scope="col">运作说明</th>
+                <th scope="col">风险指向</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="pair"><span class="dot-p p-c"></span>保证金</span></td>
+                <td>开仓按仓位规模与杠杆比例缴纳</td>
+                <td>价格反向波动直接侵蚀保证金权益</td>
+              </tr>
+              <tr>
+                <td><span class="pair"><span class="dot-p p-a"></span>杠杆</span></td>
+                <td>按平台公布的档位选择，放大价格敞口</td>
+                <td>杠杆越高，权益波动速度越快</td>
+              </tr>
+              <tr>
+                <td><span class="pair"><span class="dot-p p-c"></span>资金费率</span></td>
+                <td>按周期在多空双方之间划转结算</td>
+                <td>长期持仓将累积持有成本或收入</td>
+              </tr>
+              <tr>
+                <td><span class="pair"><span class="dot-p p-a"></span>维持保证金</span></td>
+                <td>维持仓位所需的最低权益水位</td>
+                <td>低于该水位即进入风险处置流程</td>
+              </tr>
+              <tr>
+                <td><span class="pair"><span class="dot-p p-c"></span>强制平仓</span></td>
+                <td>权益不足时由系统按规则减仓或平仓</td>
+                <td>可能实现亏损且不可撤销</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid g2" style="margin-top:16px">
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 18V8"/><path d="M10 18V5"/><path d="M16 18v-7"/><path d="M22 18V9"/>
+            </svg>
+          </span>
+          <h3>风险率与预警</h3>
+          <p>客户端显示账户风险率与保证金占用情况，风险率接近阈值时给出提示，便于用户自行减仓或补充保证金。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 4l9 16H3z"/><path d="M12 10v4"/><path d="M12 17v.01"/>
+            </svg>
+          </span>
+          <h3>风险自评先行</h3>
+          <p>合约交易风险显著高于币币交易，建议在理解杠杆放大效应与强平规则后再参与，并使用可承受损失的资金。</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="safety" aria-labelledby="safety-title">
+      <div class="sec-head reveal">
+        <span class="tag">Security</span>
+        <h2 id="safety-title">资产存储与安全</h2>
+        <p>资产安全由存储结构、密钥权限、提现风控与账户侧设置共同构成，任一环节缺失都可能形成短板。</p>
+      </div>
+      <div class="valid-grid">
+        <div class="valid reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2.4"/><path d="M3.5 10h17"/><path d="M8 15h4"/></svg></span>
+          <div><h3>冷热钱包隔离</h3><p>大部分资产存放于离线环境，线上仅保留日常流转所需额度，降低暴露面。</p></div>
+        </div>
+        <div class="valid reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="2.6"/><circle cx="16" cy="9" r="2.6"/><path d="M3.5 19c0-2.6 2-4.4 4.5-4.4"/><path d="M20.5 19c0-2.6-2-4.4-4.5-4.4"/><path d="M9.5 19c0-2.1 1.1-3.6 2.5-3.6s2.5 1.5 2.5 3.6"/></svg></span>
+          <div><h3>多重签名授权</h3><p>关键操作需多把私钥共同确认，单一人员或设备无法独立完成资金调拨。</p></div>
+        </div>
+        <div class="valid reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h4l2-4 3 8 2-4h3"/></svg></span>
+          <div><h3>提现风控</h3><p>提现环节校验地址格式与历史记录，异常提币触发人工复核与延时处理。</p></div>
+        </div>
+        <div class="valid reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="9.5" rx="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg></span>
+          <div><h3>两步验证</h3><p>登录与提币环节支持二次验证，配合设备锁与地址白名单形成独立校验层。</p></div>
+        </div>
+      </div>
+
+      <div class="risk-block reveal" style="margin-top:18px">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.8" width="16" height="9.2" rx="2.4"/><path d="M8 10.8V7.8a4 4 0 0 1 8 0v3"/></svg>
+          不向任何人泄露的三项凭据
+        </h2>
+        <ul>
+          <li>助记词与私钥：仅由本人离线保管，不截图、不上传云端、不填写于任何页面。</li>
+          <li>登录密码：设置独立强密码，不与其它网站共用，定期更换。</li>
+          <li>短信与邮箱验证码：仅用于本人操作，任何索要行为一律视为诈骗。</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="support" aria-labelledby="support-title">
+      <div class="sec-head reveal">
+        <span class="tag">Support</span>
+        <h2 id="support-title">24 小时客服支持与常见问题受理路径</h2>
+        <p>客服按统一受理流程处理问题，提交时附上必要信息可显著提升处理效率。</p>
+      </div>
+      <div class="support reveal">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2h-3"/><rect x="2.5" y="11" width="4" height="7" rx="2"/><rect x="17.5" y="11" width="4" height="7" rx="2"/></svg>
+          问题受理四步路径
+        </h2>
+        <ol>
+          <li>通过官方客户端内的在线客服入口，或官方页面公示的受理渠道提交问题。</li>
+          <li>说明问题类型与发生时间，附上订单号、充值或提现记录编号等必要信息。</li>
+          <li>按客服指引补充材料，涉及账号安全的操作须由本人完成，客服不会代为操作。</li>
+          <li>处理结果经官方渠道反馈，请勿轻信任何站外私信或非官方群组转述的处理结论。</li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="start-title">
+      <div class="sec-head reveal">
+        <span class="tag">Getting started</span>
+        <h2 id="start-title">新手入门四步</h2>
+        <p>完成易欧App 下载与安装后，按以下四步开始使用，每一步都以安全确认为前提。</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">1</span>
+          <h3>确认官方入口</h3>
+          <p>核对访问的是易欧交易所官方页面，将入口加入收藏夹固定使用。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">2</span>
+          <h3>下载正版 App</h3>
+          <p>按官方指引选择安卓或 iOS 通道，核对安装包信息后再安装。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">3</span>
+          <h3>注册与安全设置</h3>
+          <p>完成注册与身份核验，开启两步验证、设备锁与地址白名单。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">4</span>
+          <h3>熟悉功能与规则</h3>
+          <p>先查看费率与保证金规则，再用小额熟悉下单与提现流程。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="sec-head reveal">
+        <span class="tag">FAQ</span>
+        <h2 id="faq-title">常见问题</h2>
+        <p>关于易欧交易所、易欧App 下载、币币与合约交易机制、资产安全与客服受理的高频疑问，逐条整理如下。</p>
+      </div>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>易欧交易所是什么类型的平台？</summary>
+          <p>易欧交易所是面向数字资产交易用户的服务平台，提供币币交易、合约交易与资产存储等基础功能，并在官方页面公示费率、保证金与风控相关规则，便于用户在下单前核对。</p>
+        </details>
+        <details class="reveal">
+          <summary>易欧App 应该从哪里下载才是正版？</summary>
+          <p>请从易欧交易所官方页面公布的下载入口获取安卓与 iOS 客户端，安装前核对应用名称、开发者标识与版本说明是否与官方展示一致。不要使用来源不明的第三方下载站、群文件转发包或所谓内部版本。</p>
+        </details>
+        <details class="reveal">
+          <summary>搜索 ok下载、ok官网 时如何确认访问的站点是否与易欧交易所相关？</summary>
+          <p>ok平台注册、ok交易所、ok下载、ok官网 等表述指向的是另一品牌主体的产品，与易欧交易所并非同一运营主体，两者不存在隶属或官方合作关系。若您需要易欧交易所，请以本站及官方公告公示的入口为准，不要凭相似名称判断归属。</p>
+        </details>
+        <details class="reveal">
+          <summary>合约交易中的保证金、杠杆与强制平仓如何理解？</summary>
+          <p>开仓需按仓位规模与杠杆比例缴纳保证金，杠杆越高占用保证金越少，但价格反向波动对权益的侵蚀也越快。当账户权益低于维持保证金要求时，系统按规则触发强制平仓以控制风险敞口，该过程可能实现亏损且不可撤销。</p>
+        </details>
+        <details class="reveal">
+          <summary>资金费率是按什么周期结算的？</summary>
+          <p>资金费率按平台公布的结算周期在多空双方之间划转，用于使合约价格与标的参考价格保持贴近。费率数值随市场情况变化，持仓期间会按期结算，长期持仓将累积相应成本或收入。</p>
+        </details>
+        <details class="reveal">
+          <summary>页面中的 K 线与订单簿是实时行情吗？</summary>
+          <p>不是。首屏面板中的 K 线柱、订单簿档位与中间价为界面排版演示用途的示意内容，不代表任何时点的真实行情、价格或成交量，也不构成收益预期，不可作为交易依据。</p>
+        </details>
+        <details class="reveal">
+          <summary>资产存储方面有哪些安全机制？</summary>
+          <p>平台采用冷热钱包分离，大部分资产存放于离线环境，线上仅保留日常流转额度；关键操作需多重签名授权；提现环节设有地址校验与风险拦截，账户侧支持两步验证与设备锁。</p>
+        </details>
+        <details class="reveal">
+          <summary>遇到问题如何获得 24 小时客服支持？</summary>
+          <p>可通过官方客户端内的在线客服入口或官方页面公示的受理渠道提交问题，并附上必要的订单号与时间信息。客服不会索要助记词、私钥、登录密码或验证码，凡提出此类要求的均为诈骗。</p>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="risk-title">
+      <div class="risk-block reveal">
+        <h2 id="risk-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4"/><path d="M12 17v.01"/></svg>
+          风险提示
+        </h2>
+        <ul>
+          <li>数字资产交易存在较高风险，请谨慎决策。价格波动可能导致本金损失，合约交易风险更为显著。</li>
+          <li>本页内容仅为平台功能与机制说明，不构成任何投资建议、收益承诺或要约邀请。</li>
+          <li>请仅从易欧交易所官方页面获取正版客户端，警惕仿冒站点、第三方转发包与索要验证码的行为。</li>
+          <li>杠杆会同时放大盈亏，当权益低于维持保证金要求时将触发强制平仓，可能实现亏损且不可撤销。</li>
+          <li>资金费率按期结算，长期持仓会累积相应成本，请在开仓前确认结算周期与当次费率。</li>
+          <li>助记词与私钥一旦泄露，资产可能被立即转移且难以追回，请务必离线妥善保管。</li>
+          <li>页面内的 K 线、订单簿与比例数字均为排版演示用途，非实时行情，不可作为交易依据。</li>
+          <li>ok平台注册、ok交易所、ok下载、ok官网 等名称指向其他品牌主体，与易欧交易所无隶属或合作关系。</li>
+          <li>各地区对数字资产相关业务的监管要求不同，请自行确认所在地法律法规并合规使用。</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top" aria-label="返回页面顶部">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a0410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 6l4.2 12L12 9.6 14.8 18 19 6"/>
+            </svg>
+          </span>
+          <span>易欧交易所<small>YIOU EXCHANGE</small></span>
+        </a>
+        <p>易欧交易所提供安全、高效的币币交易、合约交易及资产存储服务。下载易欧App，享受极速交易体验与24小时客服支持。</p>
+      </div>
+      <div class="foot-col">
+        <h4>页面导航</h4>
+        <a href="#overview">平台概览</a>
+        <a href="#download">易欧App 下载</a>
+        <a href="#spot">币币交易</a>
+        <a href="#contract">合约机制</a>
+      </div>
+      <div class="foot-col">
+        <h4>帮助与说明</h4>
+        <a href="#safety">资产与安全</a>
+        <a href="#support">客服支持</a>
+        <a href="#faq">常见问题</a>
+        <a href="#top">返回顶部</a>
+      </div>
+    </div>
+
+    <div class="foot-risk">
+      <strong>风险声明：</strong>数字资产交易存在较高风险，请谨慎决策。本页面所载信息仅供功能与机制说明之用，不构成投资建议或任何形式的收益保证。合约交易涉及杠杆、资金费率与强制平仓机制，可能放大亏损；请仅从官方渠道获取正版 App，勿向任何人透露助记词、私钥与验证码；页面示意图形不代表实时行情；ok平台注册、ok交易所、ok下载、ok官网 等名称指向其他品牌主体，与易欧交易所无隶属或合作关系。请在充分理解规则并确认所在地法律法规的前提下自主操作。
+    </div>
+
+    <div class="copyright">
+      <span>© 2026 易欧交易所 · 本页面为信息展示页</span>
+      <span>下载按钮为页面内占位入口，示意内容不代表实时数据</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < items.length; i++) items[i].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+  for (var j = 0; j < items.length; j++) io.observe(items[j]);
+})();
+</script>
+
+</body>
+</html>
